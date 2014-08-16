@@ -9,8 +9,8 @@ vagrant up elasticsearch
 vagrant up simple_node
 ```
 
-access to apache</br>
+access to apache  
 http://192.168.33.20/
 
-after access apache, see kibana</br>
+after access apache, see kibana  
 http://192.168.33.10/index.html
