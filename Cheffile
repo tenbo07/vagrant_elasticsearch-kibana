@@ -4,3 +4,8 @@
 site 'https://supermarket.getchef.com/api/v1'
 
 cookbook 'java', '~> 1.25.0'
+cookbook 'apt'
+cookbook 'yum'
+
+cookbook 'td-agent',
+  :git => 'https://github.com/treasure-data/chef-td-agent'

@@ -1,8 +1,22 @@
 SITE
   remote: https://supermarket.getchef.com/api/v1
   specs:
+    apt (2.5.2)
     java (1.25.0)
+    yum (3.2.2)
+
+GIT
+  remote: https://github.com/treasure-data/chef-td-agent
+  ref: master
+  sha: 2230c1bc627bb2e74cd854313ea9cddc2401026f
+  specs:
+    td-agent (0.0.1)
+      apt (>= 0.0.0)
+      yum (>= 0.0.0)
 
 DEPENDENCIES
+  apt (>= 0)
   java (~> 1.25.0)
+  td-agent (>= 0)
+  yum (>= 0)
 

@@ -1,0 +1,13 @@
+f_host="\\\"host\\\": \\\"%h\\\""
+f_user="\\\"user\\\": \\\"%u\\\""
+f_time="\\\"time\\\": \\\"%{%d/%b/%Y:%M:%S %z}t\\\""
+f_method="\\\"method\\\": \\\"%m\\\""
+f_path="\\\"path\\\": \\\"%U%q\\\""
+f_code="\\\"code\\\": \\\"%>s\\\""
+f_size="\\\"size\\\": \\\"%b\\\""
+f_referer="\\\"referer\\\": \\\"%{Referer}i\\\""
+f_agent="\\\"agent\\\": \\\"%{User-agent}i\\\""
+f_proccess="\\\"process_time\\\": %D"
+
+default[:apache][:logformat]="\"{#{f_host},#{f_user},#{f_time},#{f_method},#{f_path},#{f_code},#{f_size},#{f_referer},#{f_agent},#{f_proccess}}\""
+default[:apache][:cuslog]="${APACHE_LOG_DIR}/access.log"
