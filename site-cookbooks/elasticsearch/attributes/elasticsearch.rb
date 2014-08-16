@@ -6,5 +6,6 @@ default[:elasticsearch][:setting] = {
   "index.number_of_replicas" => "0",
   "path.conf" => "/etc/elasticsearch",
   "path.data" => "/data",
-  "path.logs" => "/var/log/elasticsearch"
+  "path.logs" => "/var/log/elasticsearch",
+  "script.disable_dynamic" => "false"
 }
