@@ -27,7 +27,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     es.omnibus.chef_version = :latest
       setup_chef_solo(es) do |chef|
-        chef.add_recipe 'recipe[java]'
         chef.add_recipe 'recipe[elasticsearch::default]'
         chef.json = {
           "java" => {

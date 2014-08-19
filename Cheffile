@@ -9,3 +9,6 @@ cookbook 'yum'
 
 cookbook 'td-agent',
   :git => 'https://github.com/treasure-data/chef-td-agent'
+
+cookbook 'elasticsearch',
+  :git => 'https://github.com/tenbo07/chef-elasticsearch'
