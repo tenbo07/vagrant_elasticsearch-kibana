@@ -8,9 +8,9 @@ SITE
 GIT
   remote: https://github.com/tenbo07/chef-elasticsearch
   ref: master
-  sha: 71b96e4f95d0fc00bc64fd67335c342065db1d3a
+  sha: cae1816964a4cb015d81dd7104ecc19f819febaa
   specs:
-    elasticsearch (0.1.2)
+    elasticsearch (0.1.0)
       java (>= 0.0.0)
 
 GIT
